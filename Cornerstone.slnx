@@ -34,4 +34,9 @@
     <Project Path="src/Services/Shipment/Cornerstone.Shipment.Domain/Cornerstone.Shipment.Domain.csproj" />
     <Project Path="src/Services/Shipment/Cornerstone.Shipment.Infrastructure/Cornerstone.Shipment.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/src/Shared/">
+    <Project Path="src/Shared/Cornerstone.Common/Cornerstone.Common.csproj" Id="49843007-bb5d-4658-9ae9-dc851523dc8f" />
+    <Project Path="src/Shared/Cornerstone.Contracts/Cornerstone.Contracts.csproj" Id="fce8241b-09fb-4554-996b-8058e844c33a" />
+    <Project Path="src/Shared/Cornerstone.Observability/Cornerstone.Observability.csproj" Id="b7258d09-b43a-4ba3-b6d3-9b2630eacc3b" />
+  </Folder>
 </Solution>
