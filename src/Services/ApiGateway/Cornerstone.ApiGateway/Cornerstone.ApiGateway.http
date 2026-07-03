@@ -1,0 +1,6 @@
+@Cornerstone.ApiGateway_HostAddress = http://localhost:5116
+
+GET {{Cornerstone.ApiGateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

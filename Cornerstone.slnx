@@ -1,0 +1,37 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/ApiGateway/">
+    <Project Path="src/Services/ApiGateway/Cornerstone.ApiGateway/Cornerstone.ApiGateway.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Catalog/">
+    <Project Path="src/Services/Catalog/Cornerstone.Catalog.Api/Cornerstone.Catalog.Api.csproj" />
+    <Project Path="src/Services/Catalog/Cornerstone.Catalog.Application/Cornerstone.Catalog.Application.csproj" />
+    <Project Path="src/Services/Catalog/Cornerstone.Catalog.Domain/Cornerstone.Catalog.Domain.csproj" />
+    <Project Path="src/Services/Catalog/Cornerstone.Catalog.Infrastructure/Cornerstone.Catalog.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Inventory/">
+    <Project Path="src/Services/Inventory/Cornerstone.Inventory.Api/Cornerstone.Inventory.Api.csproj" />
+    <Project Path="src/Services/Inventory/Cornerstone.Inventory.Application/Cornerstone.Inventory.Application.csproj" />
+    <Project Path="src/Services/Inventory/Cornerstone.Inventory.Domain/Cornerstone.Inventory.Domain.csproj" />
+    <Project Path="src/Services/Inventory/Cornerstone.Inventory.Infrastructure/Cornerstone.Inventory.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Order/">
+    <Project Path="src/Services/Order/Cornerstone.Order.Api/Cornerstone.Order.Api.csproj" />
+    <Project Path="src/Services/Order/Cornerstone.Order.Application/Cornerstone.Order.Application.csproj" />
+    <Project Path="src/Services/Order/Cornerstone.Order.Domain/Cornerstone.Order.Domain.csproj" />
+    <Project Path="src/Services/Order/Cornerstone.Order.Infrastructure/Cornerstone.Order.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Payment/">
+    <Project Path="src/Services/Payment/Cornerstone.Payment.Api/Cornerstone.Payment.Api.csproj" />
+    <Project Path="src/Services/Payment/Cornerstone.Payment.Application/Cornerstone.Payment.Application.csproj" />
+    <Project Path="src/Services/Payment/Cornerstone.Payment.Domain/Cornerstone.Payment.Domain.csproj" />
+    <Project Path="src/Services/Payment/Cornerstone.Payment.Infrastructure/Cornerstone.Payment.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Shipment/">
+    <Project Path="src/Services/Shipment/Cornerstone.Shipment.Api/Cornerstone.Shipment.Api.csproj" />
+    <Project Path="src/Services/Shipment/Cornerstone.Shipment.Application/Cornerstone.Shipment.Application.csproj" />
+    <Project Path="src/Services/Shipment/Cornerstone.Shipment.Domain/Cornerstone.Shipment.Domain.csproj" />
+    <Project Path="src/Services/Shipment/Cornerstone.Shipment.Infrastructure/Cornerstone.Shipment.Infrastructure.csproj" />
+  </Folder>
+</Solution>
