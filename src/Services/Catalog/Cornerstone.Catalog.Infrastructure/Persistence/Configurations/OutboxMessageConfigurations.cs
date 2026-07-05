@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Cornerstone.Catalog.Infrastructure.Persistence.Outbox;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Cornerstone.Catalog.Infrastructure.Persistence.Outbox;
 
 namespace Cornerstone.Catalog.Infrastructure.Persistence.Configurations;
 

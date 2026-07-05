@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Cornerstone.Catalog.Application.Common.Interfaces;
 using Cornerstone.Catalog.Domain;
-using Cornerstone.Catalog.Application.Common.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Cornerstone.Catalog.Infrastructure.Persistence;
 

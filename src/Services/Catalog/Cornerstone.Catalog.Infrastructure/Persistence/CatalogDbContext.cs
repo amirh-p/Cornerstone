@@ -1,9 +1,9 @@
 ﻿// Persistence/CatalogDbContext.cs
-using System.Text.Json;
-using Microsoft.EntityFrameworkCore;
-using Cornerstone.Common;
 using Cornerstone.Catalog.Domain;
 using Cornerstone.Catalog.Infrastructure.Persistence.Outbox;
+using Cornerstone.Common;
+using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
 
 namespace Cornerstone.Catalog.Infrastructure.Persistence;
 

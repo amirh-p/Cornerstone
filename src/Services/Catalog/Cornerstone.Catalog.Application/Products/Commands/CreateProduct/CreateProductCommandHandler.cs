@@ -1,7 +1,7 @@
-﻿using Cornerstone.Common.Mediator;
-using Cornerstone.Catalog.Domain;
-using Cornerstone.Catalog.Application.Common.Interfaces;
+﻿using Cornerstone.Catalog.Application.Common.Interfaces;
 using Cornerstone.Catalog.Application.Products.Dtos;
+using Cornerstone.Catalog.Domain;
+using Cornerstone.Common.Mediator;
 
 namespace Cornerstone.Catalog.Application.Products.Commands.CreateProduct;
 

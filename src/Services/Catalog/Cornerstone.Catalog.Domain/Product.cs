@@ -1,5 +1,5 @@
-﻿using Cornerstone.Common;
-using Cornerstone.Catalog.Domain.Events;
+﻿using Cornerstone.Catalog.Domain.Events;
+using Cornerstone.Common;
 
 namespace Cornerstone.Catalog.Domain;
 

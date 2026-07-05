@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Cornerstone.Catalog.Application.Common.Interfaces;
+using Cornerstone.Catalog.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Cornerstone.Catalog.Application.Common.Interfaces;
-using Cornerstone.Catalog.Infrastructure.Persistence;
 
 namespace Cornerstone.Catalog.Infrastructure;
 

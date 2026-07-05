@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Cornerstone.Catalog.Domain;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Cornerstone.Catalog.Domain;
 
 namespace Cornerstone.Catalog.Infrastructure.Persistence.Configurations;
 

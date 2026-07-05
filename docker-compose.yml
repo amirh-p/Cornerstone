@@ -1,0 +1,21 @@
+services:
+  catalog-db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: cornerstone_catalog
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports: ["5432:5432"]
+    volumes: [catalog-db-data:/var/lib/postgresql/data]
+
+  catalog-api:
+    build:
+      context: .
+      dockerfile: src/Services/Catalog/Cornerstone.Catalog.Api/Dockerfile
+    environment:
+      ConnectionStrings__CatalogDb: "Host=catalog-db;Database=cornerstone_catalog;Username=postgres;Password=postgres"
+    ports: ["5001:8080"]
+    depends_on: [catalog-db]
+
+volumes:
+  catalog-db-data:
