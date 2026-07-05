@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Shared\Cornerstone.Common\Cornerstone.Common.csproj" />
     <ProjectReference Include="..\Cornerstone.Catalog.Infrastructure\Cornerstone.Catalog.Infrastructure.csproj" />
   </ItemGroup>
 

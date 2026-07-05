@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cornerstone.Catalog.Application\Cornerstone.Catalog.Application.csproj" />
-    <ProjectReference Include="..\Cornerstone.Catalog.Domain\Cornerstone.Catalog.Domain.csproj" />
   </ItemGroup>
 
 </Project>
