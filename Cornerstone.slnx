@@ -39,4 +39,7 @@
     <Project Path="src/Shared/Cornerstone.Contracts/Cornerstone.Contracts.csproj" Id="fce8241b-09fb-4554-996b-8058e844c33a" />
     <Project Path="src/Shared/Cornerstone.Observability/Cornerstone.Observability.csproj" Id="b7258d09-b43a-4ba3-b6d3-9b2630eacc3b" />
   </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
 </Solution>
