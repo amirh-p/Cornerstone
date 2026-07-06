@@ -1,6 +1,7 @@
 services:
 
   catalog-db:
+    container_name: catalog-db
     image: postgres:16
     environment:
       POSTGRES_DB: cornerstone_catalog
@@ -10,6 +11,7 @@ services:
     volumes: [catalog-db-data:/var/lib/postgresql/data]
 
   cornerstone.catalog.api:
+    container_name: cornerstone.catalog.api
     build:
       context: .
       dockerfile: src/Services/Catalog/Cornerstone.Catalog.Api/Dockerfile

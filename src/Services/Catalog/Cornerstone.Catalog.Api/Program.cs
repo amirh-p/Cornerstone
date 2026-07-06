@@ -2,6 +2,8 @@ using Cornerstone.Catalog.Api.Endpoints;
 using Cornerstone.Catalog.Api.Middleware;
 using Cornerstone.Catalog.Application;
 using Cornerstone.Catalog.Infrastructure;
+using Cornerstone.Catalog.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +22,9 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
+    var scope = app.Services.CreateScope();
+    await scope.ServiceProvider.GetRequiredService<CatalogDbContext>().Database.MigrateAsync();
+
     app.MapOpenApi();
 }
 

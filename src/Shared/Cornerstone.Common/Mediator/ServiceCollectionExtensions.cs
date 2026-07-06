@@ -26,6 +26,12 @@ public static class ServiceCollectionExtensions
                 .Select(i => (Interface: i, Implementation: t)));
 
         foreach (var (iface, impl) in registrations)
-            services.AddScoped(iface, impl);
+        {
+    
+            if (impl.IsGenericTypeDefinition)
+                services.AddScoped(iface.GetGenericTypeDefinition(), impl);
+            else
+                services.AddScoped(iface, impl);
+        }
     }
 }
