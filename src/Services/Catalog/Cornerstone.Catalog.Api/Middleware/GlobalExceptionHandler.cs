@@ -1,4 +1,4 @@
-﻿using Cornerstone.Catalog.Application.Common.Exceptions;
+﻿using Cornerstone.Common.Exceptions;
 using FluentValidation;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;

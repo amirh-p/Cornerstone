@@ -8,13 +8,16 @@ namespace Cornerstone.Catalog.Infrastructure;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddCatalogInfrastructure(this IServiceCollection services, IConfiguration configuration)
+    extension(IServiceCollection services)
     {
-        services.AddDbContext<CatalogDbContext>(options =>
-            options.UseNpgsql(configuration.GetConnectionString("CatalogDb")));
+        public IServiceCollection AddCatalogInfrastructure(IConfiguration configuration)
+        {
+            services.AddDbContext<CatalogDbContext>(options =>
+                options.UseNpgsql(configuration.GetConnectionString("CatalogDb")));
 
-        services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
 
-        return services;
+            return services;
+        }
     }
 }

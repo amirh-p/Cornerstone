@@ -1,6 +1,6 @@
 ﻿using Cornerstone.Common;
 
-namespace Cornerstone.Order.Domain.Events;
+namespace Cornerstone.Ordering.Domain.Events;
 
 public sealed record OrderPlacedLine(Guid ProductId, int Quantity);
 

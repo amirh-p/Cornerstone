@@ -1,7 +1,7 @@
 ﻿using Cornerstone.Common;
-using Cornerstone.Order.Domain.Events;
+using Cornerstone.Ordering.Domain.Events;
 
-namespace Cornerstone.Order.Domain;
+namespace Cornerstone.Ordering.Domain;
 
 public sealed class Order : AggregateRoot<OrderId>
 {

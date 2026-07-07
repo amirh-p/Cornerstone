@@ -1,4 +1,4 @@
-﻿namespace Cornerstone.Catalog.Application.Common.Exceptions;
+﻿namespace Cornerstone.Common.Exceptions;
 
 public sealed class NotFoundException(string entityName, object key)
     : Exception($"{entityName} with id '{key}' was not found.");

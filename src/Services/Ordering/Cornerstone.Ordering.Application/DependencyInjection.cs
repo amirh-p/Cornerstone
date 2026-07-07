@@ -2,13 +2,13 @@
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Cornerstone.Catalog.Application;
+namespace Cornerstone.Ordering.Application;
 
 public static class DependencyInjection
 {
     extension(IServiceCollection services)
     {
-        public IServiceCollection AddCatalogApplication()
+        public IServiceCollection AddOrderingApplication()
         {
             services.AddCornerstoneMediator(typeof(DependencyInjection).Assembly);
             services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly);

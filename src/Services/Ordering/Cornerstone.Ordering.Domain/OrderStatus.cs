@@ -1,4 +1,4 @@
-﻿namespace Cornerstone.Order.Domain;
+﻿namespace Cornerstone.Ordering.Domain;
 
 public enum OrderStatus
 {

@@ -1,6 +1,6 @@
 ﻿using Cornerstone.Common;
 
-namespace Cornerstone.Order.Domain;
+namespace Cornerstone.Ordering.Domain;
 
 public sealed class OrderLine
 {

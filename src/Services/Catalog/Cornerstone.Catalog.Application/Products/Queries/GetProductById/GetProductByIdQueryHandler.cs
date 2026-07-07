@@ -1,7 +1,7 @@
-﻿using Cornerstone.Catalog.Application.Common.Exceptions;
-using Cornerstone.Catalog.Application.Common.Interfaces;
+﻿using Cornerstone.Catalog.Application.Common.Interfaces;
 using Cornerstone.Catalog.Application.Products.Dtos;
 using Cornerstone.Catalog.Domain;
+using Cornerstone.Common.Exceptions;
 using Cornerstone.Common.Mediator;
 
 namespace Cornerstone.Catalog.Application.Products.Queries.GetProductById;

@@ -16,11 +16,11 @@
     <Project Path="src/Services/Inventory/Cornerstone.Inventory.Domain/Cornerstone.Inventory.Domain.csproj" />
     <Project Path="src/Services/Inventory/Cornerstone.Inventory.Infrastructure/Cornerstone.Inventory.Infrastructure.csproj" />
   </Folder>
-  <Folder Name="/src/Services/Order/">
-    <Project Path="src/Services/Order/Cornerstone.Order.Api/Cornerstone.Order.Api.csproj" />
-    <Project Path="src/Services/Order/Cornerstone.Order.Application/Cornerstone.Order.Application.csproj" />
-    <Project Path="src/Services/Order/Cornerstone.Order.Domain/Cornerstone.Order.Domain.csproj" />
-    <Project Path="src/Services/Order/Cornerstone.Order.Infrastructure/Cornerstone.Order.Infrastructure.csproj" />
+  <Folder Name="/src/Services/Ordering/">
+    <Project Path="src/Services/Ordering/Cornerstone.Ordering.Api/Cornerstone.Ordering.Api.csproj" />
+    <Project Path="src/Services/Ordering/Cornerstone.Ordering.Application/Cornerstone.Ordering.Application.csproj" />
+    <Project Path="src/Services/Ordering/Cornerstone.Ordering.Domain/Cornerstone.Ordering.Domain.csproj" />
+    <Project Path="src/Services/Ordering/Cornerstone.Ordering.Infrastructure/Cornerstone.Ordering.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/src/Services/Payment/">
     <Project Path="src/Services/Payment/Cornerstone.Payment.Api/Cornerstone.Payment.Api.csproj" />
