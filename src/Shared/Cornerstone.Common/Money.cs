@@ -1,6 +1,4 @@
-﻿using Cornerstone.Common;
-
-namespace Cornerstone.Catalog.Domain;
+﻿namespace Cornerstone.Common;
 
 public sealed class Money : ValueObject
 {
