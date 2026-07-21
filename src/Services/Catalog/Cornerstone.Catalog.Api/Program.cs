@@ -20,16 +20,18 @@ builder.Services.AddHealthChecks()
 
 var app = builder.Build();
 
+app.UseExceptionHandler();
+
 if (app.Environment.IsDevelopment())
 {
-    var scope = app.Services.CreateScope();
+    using var scope = app.Services.CreateScope();
     await scope.ServiceProvider.GetRequiredService<CatalogDbContext>().Database.MigrateAsync();
 
     app.MapOpenApi();
+    app.MapScalarApiReference(string.Empty);
 }
 
 app.UseHttpsRedirection();
-app.MapScalarApiReference(string.Empty);
 
 app.MapProductEndpoints();
 app.MapHealthChecks("/health");

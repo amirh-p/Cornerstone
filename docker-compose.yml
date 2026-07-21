@@ -1,14 +1,14 @@
 services:
 
-  catalog-db:
-    container_name: catalog-db
+  cornerstone.catalog.db:
+    container_name: cornerstone.catalog.db
     image: postgres:16
     environment:
       POSTGRES_DB: cornerstone_catalog
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports: ["5432:5432"]
-    volumes: [catalog-db-data:/var/lib/postgresql/data]
+    volumes: [cornerstone-catalog-db-data:/var/lib/postgresql/data]
 
   cornerstone.catalog.api:
     container_name: cornerstone.catalog.api
@@ -18,7 +18,29 @@ services:
     environment:
       ConnectionStrings__CatalogDb: "Host=catalog-db;Database=cornerstone_catalog;Username=postgres;Password=postgres"
     ports: ["5001:8080"]
-    depends_on: [catalog-db]
+    depends_on: [cornerstone.catalog.db]
+
+  cornerstone.ordering.db:
+    container_name: "cornerstone.ordering.db"
+    image: postgres:16
+    environment:
+      POSTGRES_DB: cornerstone_ordering
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports: ["5433:5432"]
+    volumes: [cornerstone-ordering-db-data:/var/lib/postgresql/data]
+
+  cornerstone.ordering.api:
+    container_name: "cornerstone.ordering.api"
+    build:
+      context: .
+      dockerfile: src/Services/Ordering/Cornerstone.Ordering.Api/Dockerfile
+    environment:
+      ConnectionStrings__OrderingDb: "Host=ordering-db;Database=cornerstone_ordering;Username=postgres;Password=postgres"
+      Services__CatalogApi: "http://catalog-api:8080"
+    ports: ["5002:8080"]
+    depends_on: [cornerstone.ordering.db]
   
 volumes:
-  catalog-db-data:
+  cornerstone-catalog-db-data:
+  cornerstone-ordering-db-data:

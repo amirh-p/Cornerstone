@@ -9,19 +9,22 @@ namespace Cornerstone.Ordering.Infrastructure;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddOrderingInfrastructure(this IServiceCollection services, IConfiguration configuration)
+    extension(IServiceCollection services)
     {
-        services.AddDbContext<OrderingDbContext>(options =>
-            options.UseNpgsql(configuration.GetConnectionString("OrderingDb")));
-
-        services.AddScoped<IOrderRepository, OrderRepository>();
-
-        services.AddHttpClient<IProductCatalogClient, ProductCatalogClient>(client =>
+        public IServiceCollection AddOrderingInfrastructure(IConfiguration configuration)
         {
-            client.BaseAddress = new Uri(configuration["Services:CatalogApi"]!);
-        })
-        .AddStandardResilienceHandler();
+            services.AddDbContext<OrderingDbContext>(options =>
+                options.UseNpgsql(configuration.GetConnectionString("OrderingDb")));
 
-        return services;
+            services.AddScoped<IOrderRepository, OrderRepository>();
+
+            services.AddHttpClient<IProductCatalogClient, ProductCatalogClient>(client =>
+            {
+                client.BaseAddress = new Uri(configuration["Services:CatalogApi"]!);
+            })
+            .AddStandardResilienceHandler();
+
+            return services;
+        }
     }
 }
